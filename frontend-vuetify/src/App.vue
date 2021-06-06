@@ -2,55 +2,45 @@
   <v-app>
     <v-app-bar
       app
-      color="primary"
+      color="#06a323"
       dark
     >
       <div class="d-flex align-center">
         <v-img
-          alt="Vuetify Logo"
+          alt="Encuesta"
           class="shrink mr-2"
           contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          src="https://uploads-blog.encuesta.com/wp-content/uploads/2015/04/31154320/concepto-encuesta-linea-personas-encuestas-lista-verificacion_25147-179.jpg"
           transition="scale-transition"
           width="40"
+          style="border-radius: 50%;"
         />
 
-        <v-img
+        <p
           alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
+          class="shrink mt-1"
           contain
           min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
           width="100"
-        />
+        >
+        Encuesta para Null Valley</p>
       </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <Encuesta/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import Encuesta from './components/Encuesta';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    Encuesta,
   },
 
   data: () => ({
