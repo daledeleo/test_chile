@@ -23,25 +23,19 @@
           min-width="100"
           width="100"
         >
-        Encuesta para Null Valley</p>
+        Encuesta para Null Valley - {{this.$route.name}}</p>
       </div>
     </v-app-bar>
 
     <v-main>
-      <Encuesta/>
+      <router-view> </router-view>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import Encuesta from './components/Encuesta';
-
 export default {
   name: 'App',
-
-  components: {
-    Encuesta,
-  },
 
   data: () => ({
     //

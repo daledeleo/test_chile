@@ -9,5 +9,6 @@ router.register('Estrellas',EstrellaViewSet)
 
 urlpatterns=[
     path('',current_datetime),
+    path('api/Comentarios/delete',delete_all_comentarios),
     path('api/',include(router.urls)),
     ]

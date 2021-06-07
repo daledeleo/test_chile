@@ -8,32 +8,13 @@
     text-align: center;
 }
 
+.p_text{
+    text-align: center;
+}
 .card_comentario{
     padding:10px;
     margin-bottom: 5px;
     width: 240px;
-}
-
-.div_form{
-    border-color: blueviolet;
-    border-style:solid;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px;
-    border-radius:10px;
-}
-
-.div_comentarios{
-    border-color: greenyellow;
-    border-style:solid;
-    border-radius: 10%;
-    width: 300px;
-    height: 180px;
-    overflow: auto;
-    padding: 30px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .wordart.slate {
@@ -49,4 +30,17 @@
     font-weight: normal;
     color: #2f5485;
     text-shadow: 0.03em 0.03em 0px #b3b3b3;
+}
+
+.div_comentarios{
+    border-color: greenyellow;
+    border-style:solid;
+    border-radius: 10%;
+    width: 300px;
+    height: 180px;
+    overflow: auto;
+    padding: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
