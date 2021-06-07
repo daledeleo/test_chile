@@ -12,9 +12,9 @@ _Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener 
 
 1. Crear un ambiente virtual en python y activarlo (esto es opcional) explicado en [link](https://medium.com/@m.monroyc22/configurar-entorno-virtual-python-a860e820aace/)
 
-2. Luego ubicarse en el directorio del proyecto e instalar el archivo requirements.txt
+2. Luego ubicarse en el directorio del proyecto(backend_django) e instalar el archivo requirements.txt
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 _Esto instalará todas las librerias necesarias para el backend_
 
@@ -25,11 +25,6 @@ python manage.py migrate
 _luego_
 ```
 python manage.py makemigrations
-```
-
-_si esto falla entonces ejecutar_
-```
-python manage.py makemigrations core
 ```
 _y luego_
 ```
@@ -47,6 +42,3 @@ python manage.py createsuperuser
  ```
  python manage.py runserver
  ```
-6. Creacion de usuario administrador para el inicio de sesión en el frontend
-_ir a localhost:8000 en los usuario del sistema crear un usario para comenzar el login el frontend_
-_Se tiene que llenar todos los campos necesarios_
