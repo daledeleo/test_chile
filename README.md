@@ -1,5 +1,5 @@
 # test_chile
-_El presente proyecto tiene como objetivo llevar un control de la famacoterapia de un paciente_
+_El presente proyecto tiene como objetivo probar mi habilidades como desarrollador web._
 
 ## Comenzando 🚀
 
