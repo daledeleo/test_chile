@@ -166,11 +166,12 @@ export default {
     this.$props.comentarios.forEach(comentario => {
       if (comentario.id_estrella.id == 15) {
         //David
-        this.David_votaciones = this.David_votaciones + comentario.valoracion;
-      } else if (comentario.id_estrella.id == 25) {
+        this.David_votaciones = this.David_votaciones + parseInt(incomentario.valoracion);
+      }
+      if (comentario.id_estrella.id == 25) {
         //Jonathan
         this.Jonathan_vataciones =
-          this.Jonathan_vataciones + comentario.valoracion;
+          this.Jonathan_vataciones +  parseInt(incomentario.valoracion);
       }
       if (this.includes(comentario.comentario)) {
         this.comentarios_ofuscados.push(comentario);

@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os
+import mimetypes
+mimetypes.add_type("text/css", ".css", True)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,8 +28,8 @@ SECRET_KEY = 'django-insecure-p=+9w!2bh*+o6(cv*f9m)%h*&zg6*24gv6$=!=&h*vtg$@y+da
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-CORS_ALLOWED_ORIGINS = ["http://localhost:8080"]
+ALLOWED_HOSTS = ["*"]
+CORS_ALLOWED_ORIGINS = ["http://localhost:8080","https://forntend-test-chile.herokuapp.com"]
 
 # Application definition
 
@@ -129,6 +132,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

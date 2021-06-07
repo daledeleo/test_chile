@@ -1,6 +1,6 @@
   import axios from 'axios';
 
 export default axios.create({
-    baseURL: "http://localhost:8000/api/",
+    baseURL: "https://backend-chile-test.herokuapp.com/api/",
     responseType: "json",
 });

@@ -3,8 +3,8 @@ from rest_framework import viewsets
 from .models import *
 from .serializers import *
 import datetime
+from django.http import HttpResponse
 from rest_framework.response import Response
-from rest_framework.decorators import action
 from rest_framework import status
 from rest_framework.decorators import api_view
 
@@ -30,5 +30,5 @@ class EstrellaViewSet(viewsets.ModelViewSet):
 
 def current_datetime(request):
     now = datetime.datetime.now().strftime("%d/%m/%Y, %H:%M:%S")
-    html = "<html><body><p style = 'text-align:center; margin-top:auto;margin-bottom:auto'>Tiempo en Ecuador: %s.</p><div style='text-align:center'><a href='http://localhost:8000/api'>Visitar api</a><br/><a href='http://localhost:8000/admin'>Visitar pagina de administración en django</a></div></body></html>" % now
+    html = "<html><body><p style = 'text-align:center; margin-top:auto;margin-bottom:auto'>Tiempo en Ecuador: %s.</p><div style='text-align:center'><a href='https://backend-chile-test.herokuapp.com/api'>Visitar api</a><br/><a href='https://backend-chile-test.herokuapp.com/admin'>Visitar pagina de administración en django</a></div></body></html>" % now
     return HttpResponse(html)
