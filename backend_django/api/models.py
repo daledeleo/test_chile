@@ -23,7 +23,7 @@ class Comentario(models.Model):
     id=models.AutoField(primary_key = True)
     nickname = models.CharField(max_length=8, validators = [alfanumeric, min_max])
     comentario = models.CharField(max_length = 120)
-    valoracion = models.IntegerField(choices= [(-2,"Negativo"),(1,"Positivo")])
+    valoracion = models.IntegerField(choices= [(-1,"Negativo"),(2,"Positivo")])
     color = models.CharField(max_length=4, choices = [("red","rojo"),("blue","Azul")], default="rojo")
     id_estrella = models.ForeignKey(Estrella, on_delete= models.DO_NOTHING)
 

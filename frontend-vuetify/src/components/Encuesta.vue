@@ -129,7 +129,7 @@ export default {
       var form={
         nickname:this.nickname,
         comentario:this.comentario,
-        valoracion: this.select_valoracion == this.items_valoracion[0]? -2:1,
+        valoracion: this.select_valoracion == this.items_valoracion[0] ? -1:2,
         color: this.select_valoracion == this.items_valoracion[0] ? "red":"blue",
         id_estrella:this.select_estrella == "David Larousse" ? 15: 25,
       }
